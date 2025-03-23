@@ -21,7 +21,7 @@ def load_dfa_from_file(file_path):
     with open(file_path, "r") as file:
         return json.load(file)
 
-file_path = "dfa.json"
+file_path = "input.json"
 dfa = load_dfa_from_file(file_path)
 path, result = simulate_dfa(dfa)
 print(path)
